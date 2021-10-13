@@ -20,6 +20,12 @@ TextureImporter:
   - first:
       213: 8081446981229546232
     second: ProtagonistMaleConcept2_5
+  - first:
+      213: -7186920896978808770
+    second: ProtagonistMaleConcept2_6
+  - first:
+      213: -6072345666279678275
+    second: ProtagonistMaleConcept2_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -64,7 +70,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 1
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -230,6 +236,48 @@ TextureImporter:
       bones: []
       spriteID: 8fa075b4631172070800000000000000
       internalID: 8081446981229546232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtagonistMaleConcept2_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e301fbaa58de24c90800000000000000
+      internalID: -7186920896978808770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProtagonistMaleConcept2_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe54080ac1babba0800000000000000
+      internalID: -6072345666279678275
       vertices: []
       indices: 
       edges: []
