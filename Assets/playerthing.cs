@@ -32,12 +32,29 @@ public class playerthing : MonoBehaviour
 
     public void PlayerMove(InputAction.CallbackContext context)
     {
-        inputVector = context.ReadValue<Vector2>();
-        if(inputVector.x != 0 && inputVector.y != 0)
+        
+        if (MenuManager.instance.menuOpen == false)
         {
-            inputVector.x = 0;
-        }
+            inputVector = context.ReadValue<Vector2>();
 
-        Debug.Log(inputVector);
+            if (inputVector.x != 0 && inputVector.y != 0)
+            {
+                inputVector.x = 0;
+            }
+        }
+    }
+
+    public void PlayerGamePause(InputAction.CallbackContext context)
+    {
+
+        inputVector = Vector2.zero;
+        switch (MenuManager.instance.menuOpen)
+        {
+            case false: MenuManager.instance.menuOpen = true;
+                break;
+            case true: MenuManager.instance.menuOpen = false;
+                break;
+        }
+        MenuManager.instance.PlayerMenuToggle();
     }
 }

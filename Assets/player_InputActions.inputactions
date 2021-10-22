@@ -2,7 +2,7 @@
     "name": "player_InputActions",
     "maps": [
         {
-            "name": "Overworld",
+            "name": "Player",
             "id": "7544106f-6923-4914-956f-aa418cdb465a",
             "actions": [
                 {
@@ -10,6 +10,14 @@
                     "type": "Value",
                     "id": "f440237a-8663-4f7f-8bbc-b25e8e26c1fb",
                     "expectedControlType": "Vector2",
+                    "processors": "StickDeadzone",
+                    "interactions": ""
+                },
+                {
+                    "name": "PauseGame",
+                    "type": "Button",
+                    "id": "3f77637a-49b7-47a7-bb3d-e4676be0007c",
+                    "expectedControlType": "Button",
                     "processors": "StickDeadzone",
                     "interactions": ""
                 }
@@ -69,6 +77,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "5d6d7a41-1e33-4bec-a2d5-457cc6dc48de",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PauseGame",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
